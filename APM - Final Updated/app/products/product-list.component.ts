@@ -7,8 +7,9 @@ import { StarComponent } from '../shared/star.component';
 import { ProductService } from './product.service';
 
 @Component({
-    templateUrl: 'app/products/product-list.component.html',
-    styleUrls: ['app/products/product-list.component.css'],
+    moduleId: module.id,
+    templateUrl: 'product-list.component.html',
+    styleUrls: ['product-list.component.css'],
     pipes: [ProductFilterPipe],
     directives: [StarComponent, ROUTER_DIRECTIVES]
 })
